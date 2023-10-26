@@ -1,0 +1,278 @@
+:root {
+  --project-black: #000;
+  --project-white: #f2f2f2;
+  --project-brown-dark: #33292a;
+  --project-brown-light: #644b4f;
+  --atribute-pink: #efa69d;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  background-color: var(--project-white);
+  color: var(--project-white);
+
+  /*padding-left: 15%;
+  padding-right: 15%;*/
+}
+.navigace {
+  background-color: var(--project-brown-dark);
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 16px;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  color: var(--project-white);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+.ikona {
+  height: 20px;
+  width: 20px;
+  justify-content: right;
+  padding: 16px;
+  margin-left: auto;
+}
+.ikona img {
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .ikona {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  ul {
+    display: none;
+  }
+}
+.hero-section {
+  background-image: url(images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  /*background-position: top;*/
+  position: relative;
+  margin: 0;
+}
+.chapter {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+h1 {
+  font-size: 60px;
+  position: absolute;
+  bottom: 30px;
+  right: 1px;
+  padding-right: 15%;
+  text-align: right;
+}
+.one {
+  display: flex;
+  gap: 36px;
+  margin: 48px auto;
+  color: var(--project-black);
+}
+.text-container-1 {
+  width: 50%;
+}
+.image-container-1 {
+  width: 50%;
+}
+.image-container-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .one {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  .text-container-1 {
+    width: 100%;
+    text-align: left;
+  }
+  .image-container-1 {
+    width: 100%;
+  }
+}
+.two {
+  background-color: var(--project-brown-dark);
+  color: var(--project-white);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.icon-container img {
+  width: 60px;
+  padding-bottom: 16px;
+}
+.icon-container h5 {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .icon-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon-container img {
+    padding-bottom: 0;
+  }
+}
+.three {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.image {
+  height: 200px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header-container {
+  height: 200px;
+  background-color: var(--atribute-pink);
+}
+.header-container h2 {
+  text-align: center;
+  padding: 0;
+  margin-bottom: auto;
+  color: var(--project-black);
+}
+@media (max-width: 768px) {
+  .three {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+.four {
+  background-color: var(--project-brown-light);
+  display: flex;
+  gap: 32px;
+}
+
+.four h2 {
+  width: 20%;
+}
+.text {
+  width: 70%;
+}
+
+.btn {
+  font-weight: bold;
+  padding: 8px;
+  margin: 30px 0;
+}
+
+.five {
+  color: var(--project-black);
+}
+.rewiev1 {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.rewiev-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.rewiev2 {
+  flex-basis: 300px;
+  text-align: center;
+}
+.portrait1 {
+  height: 50px;
+  width: 50px;
+  margin: auto;
+}
+.bertie {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rewiev3 {
+  flex-basis: 300px;
+  text-align: center;
+}
+.portrait2 {
+  height: 50px;
+  width: 50px;
+  margin: auto;
+}
+.jeffrey {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tucne {
+  font-weight: bold;
+  padding-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .five {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  .rewiev-container {
+    padding-top: 36px;
+    gap: 48px;
+  }
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .gallery img {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: var(--project-brown-dark);
+  text-align: center;
+  line-height: 1.5;
+  padding: 20px;
+}
+footer a {
+  color: var(--atribute-pink);
+  font-size: 16px;
+  text-decoration: underline;
+}
